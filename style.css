@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600');
+:root {
+  --primary-color: #6b36e3;
+  --secondary-color: #ffffff; 
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {  
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;  
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.container {
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+.main {
+  padding: 2.6rem;
+}
+hr {
+  border: none;
+  border-top: 2px solid var(--secondary-color);
+  margin: 1.6rem 0 1rem;
+}
+#name {
+  font-size: 4rem;
+  font-weight: 400;
+}
+#summary {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin: 1.6rem 0 0;
+}
+#info {
+  margin: 0.4rem 0 1.6rem 0;
+}
+.btn {
+  margin: 1.4rem 1rem .2rem 0;
+  padding: 1rem 2rem;
+  border: none;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: rgba(60, 64, 67, .2) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 4px 4px 1px;
+}
+.btn:hover {
+  box-shadow: rgba(60, 64, 67, .5) 0 5px 5px 0, rgba(60, 64, 67, .45) 0 4px 4px 1px;
+  transition: 0.4s;
+}
+.btn a{
+  text-decoration: none;
+  padding: 1rem 2rem;
+  font-weight: bold;  
+}
+.social-btn {
+  border-bottom: 2px solid var(--primary-color);
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 8px;
+  margin-right: 4px;
+}
+.social-btn:hover {
+  border-bottom: 2px solid var(--secondary-color);
+  transition: 0.4s; 
+}
+@media (max-width: 530px) {
+  .btn-2 {
+    padding: 1rem 2.133rem;
+  }
+}
